@@ -13,10 +13,7 @@ import com.aquarius.emoticonmemory.core.DatabaseContext;
 public class GameDbHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "GameDbHelper";
-
-
     private static final int DATABASE_VERSION = 2;
-
 
     private static final String CREATE_USER_TABLE_SQL = "CREATE TABLE " + DBContract.TABLE_PLAYER_NAME +
             "( "+
@@ -25,7 +22,6 @@ public class GameDbHelper extends SQLiteOpenHelper {
             DBContract.SCORE + " INTEGER NOT NULL DEFAULT 0 ," +
             DBContract.ELAPSEDTIME + " TEXT NOT NULL DEFAULT ''" +
             " )";
-
 
     private static final String CREATE_HISTORY_LOG_TABLE_SQL = "CREATE TABLE " + DBContract.TABLE_HISTORY_NAME+
             "(" +

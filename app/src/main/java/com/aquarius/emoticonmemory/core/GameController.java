@@ -55,7 +55,7 @@ public class GameController {
         if (seedList != null && seedList.size() != 0) {
             resultList.addAll(seedList);
             resultList.addAll(seedList);
-            //Collections.shuffle(resultList);
+            Collections.shuffle(resultList);
         }
         return resultList;
     }

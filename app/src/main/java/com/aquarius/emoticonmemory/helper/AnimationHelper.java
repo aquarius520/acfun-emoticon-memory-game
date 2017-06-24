@@ -101,19 +101,11 @@ public class AnimationHelper {
 //        }
     }
 
-    public static void flipCardToNormal(View front, View back/*, boolean isShowBack*/) {
-//        // 正面朝上
-//        if (isShowBack) {
+    public static void flipCardToNormal(View front, View back) {
         mRightOutSetTemp.setTarget(front);
         mLeftInSetTemp.setTarget(back);
         mRightOutSetTemp.start();
         mLeftInSetTemp.start();
-//        } else { // 背面朝上
-//            mRightOutSet.setTarget(front);
-//            mLeftInSet.setTarget(back);
-//            mRightOutSet.start();
-//            mLeftInSet.start();
-//        }
     }
 
 

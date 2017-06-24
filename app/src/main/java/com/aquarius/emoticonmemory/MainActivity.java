@@ -8,8 +8,6 @@ import android.graphics.Color;
 import android.os.Handler;
 import android.os.Bundle;
 import android.os.Message;
-import android.util.Log;
-import android.view.FrameStats;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,9 +69,6 @@ public class MainActivity extends Activity implements ResultActionListener{
 
         mElapsedTimeTv = (TextView) findViewById(R.id.elapsed_time_tv);
         mGameLayout = (GameLayout) findViewById(R.id.game_layout);
-
-
-        // DbManager.getDataBaseInstance(this);
 
         GameController.initAnimationHelper(mGameLayout);
         ImageResourceHelper.init();
